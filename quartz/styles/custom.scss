@@ -1,0 +1,164 @@
+@use "./base.scss";
+
+// put your custom CSS here!
+
+/* =============================================
+   ತತ್ವ – 見性 – 여정 — Modern Editorial Theme
+   ============================================= */
+
+/* Background with subtle texture */
+body {
+  background-color: var(--light) !important;
+}
+
+/* Fonts */
+body {
+  font-family: "DM Sans", Georgia, sans-serif !important;
+  font-size: 1.05rem !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lora", Georgia, serif !important;
+  color: var(--dark) !important;
+}
+
+/* ---- LEFT SIDEBAR ---- */
+.sidebar.left {
+  border-right: 1px solid var(--lightgray) !important;
+}
+
+/* Site title — bold, large, memorable */
+.page-title {
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  font-style: italic !important;
+  color: var(--secondary) !important;
+  line-height: 1.5 !important;
+  padding-bottom: 1rem !important;
+  border-bottom: 2px solid var(--lightgray) !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Search box — pill shaped */
+.search > .search-button {
+  border-radius: 999px !important;
+  border: 1px solid var(--lightgray) !important;
+  background: white !important;
+  padding: 0.4rem 1rem !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
+}
+
+/* ---- MAIN CONTENT ---- */
+
+/* Article title — big, italic, Lora */
+.article-title {
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 2.4rem !important;
+  font-style: italic !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  color: var(--dark) !important;
+  margin-bottom: 0.25rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 1px solid var(--lightgray) !important;
+}
+
+/* Date meta — small caps feel */
+.content-meta {
+  font-size: 0.78rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: var(--gray) !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 2rem !important;
+}
+
+/* First italic line — tagline feel */
+article > p:first-child em {
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 1.2rem !important;
+  color: var(--tertiary) !important;
+  display: block !important;
+  margin-bottom: 1.5rem !important;
+  padding-left: 1rem !important;
+  border-left: 3px solid var(--tertiary) !important;
+}
+
+/* Body paragraphs */
+article p {
+  line-height: 1.85rem !important;
+  margin-bottom: 1.1rem !important;
+  color: var(--darkgray) !important;
+}
+
+/* Links */
+a {
+  color: var(--secondary) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+
+a:hover {
+  color: var(--tertiary) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+}
+
+/* HR — fades like ink */
+hr {
+  border: none !important;
+  height: 1px !important;
+  background: linear-gradient(to right, transparent, var(--lightgray), transparent) !important;
+  margin: 2.5rem auto !important;
+}
+
+/* Section headers */
+article h2 {
+  font-size: 1.4rem !important;
+  margin-top: 2rem !important;
+  padding-bottom: 0.3rem !important;
+  border-bottom: 1px solid var(--lightgray) !important;
+}
+
+/* Graph panel */
+.graph > h3 {
+  font-size: 0.75rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: var(--gray) !important;
+}
+
+.graph > .graph-outer {
+  border-radius: 10px !important;
+  border: 1px solid var(--lightgray) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+}
+
+/* Explorer */
+.explorer > button {
+  font-size: 0.75rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: var(--gray) !important;
+}
+
+/* Smooth fade in */
+.page {
+  animation: fadeIn 0.35s ease !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--lightgray) !important;
+  padding-top: 1rem !important;
+  font-size: 0.8rem !important;
+  color: var(--gray) !important;
+  margin-top: 2rem !important;
+}
+
