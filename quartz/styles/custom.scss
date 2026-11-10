@@ -203,8 +203,28 @@ body[data-slug="all-posts"] article {
 }
 
 body[data-slug="index"] .article-title,
-body[data-slug="index"] .content-meta {
+body[data-slug="index"] .content-meta,
+body[data-slug="all-posts"] .article-title,
+body[data-slug="all-posts"] .content-meta {
   display: none !important;
+}
+
+body[data-slug="index"] .page-header > .popover-hint,
+body[data-slug="all-posts"] .page-header > .popover-hint {
+  padding-top: 0 !important;
+}
+
+body[data-slug="index"] article,
+body[data-slug="all-posts"] article {
+  padding-top: 1.25rem !important;
+}
+
+article :is(h1, h2, h3, h4) > a[role="anchor"] {
+  display: none !important;
+}
+
+article :is(h1, h2, h3, h4) {
+  scroll-margin-top: 6rem;
 }
 
 .article-title {
@@ -437,6 +457,65 @@ body[data-slug="index"] .content-meta {
   font-size: 0.78rem !important;
   font-weight: 600 !important;
   white-space: nowrap;
+}
+
+/* ---------- archive hero ---------- */
+
+.archive-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 380px;
+  margin: 0.5rem 0 3rem;
+  border-radius: 24px;
+  background: #111;
+}
+
+.archive-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+.archive-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(10, 9, 8, 0.12) 0%, rgba(10, 9, 8, 0.82) 100%);
+}
+
+.archive-hero-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 2.5rem;
+}
+
+.archive-hero-content .section-label {
+  color: #f4b183 !important;
+}
+
+.archive-hero-content h1 {
+  margin: 0 0 0.55rem !important;
+  color: #fff !important;
+  font-family: "Fraunces", Georgia, serif !important;
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.045em !important;
+}
+
+.archive-hero-content p {
+  margin: 0 !important;
+  color: rgba(255, 255, 255, 0.76) !important;
+  font-size: 1rem !important;
 }
 
 /* ---------- post cards ---------- */
@@ -723,7 +802,7 @@ footer a:hover {
 
 /* ---------- responsive ---------- */
 
-@media (max-width: 1000px) {
+@media (max-width: 880px) {
   .post-grid {
     grid-template-columns: 1fr;
   }
@@ -773,6 +852,15 @@ footer a:hover {
     min-height: 480px;
     margin: 0.5rem 0 3rem;
     border-radius: 18px;
+  }
+
+  .archive-hero {
+    min-height: 320px;
+    border-radius: 18px;
+  }
+
+  .archive-hero-content {
+    padding: 1.5rem;
   }
 
   .hero-content {

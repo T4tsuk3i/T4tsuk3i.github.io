@@ -3,9 +3,14 @@ title: All Posts
 date: 2026-03-10
 ---
 
-<p class="section-label">The archive</p>
-
-Every post, newest first. One idea at a time.
+<section class="archive-hero">
+  <img class="archive-hero-image" src="./static/images/all-posts.jpg" alt="Floor-to-ceiling shelves of books in warm light">
+  <div class="archive-hero-content">
+    <p class="section-label">The archive</p>
+    <h1>All Posts</h1>
+    <p>Every post, newest first. One idea at a time.</p>
+  </div>
+</section>
 
 <div class="post-grid">
   <a class="post-card" href="./post002">
