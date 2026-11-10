@@ -40,6 +40,11 @@ export default (() => {
       <head>
         <title>{title}</title>
         <meta charSet="utf-8" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `localStorage.setItem("theme","dark");document.documentElement.setAttribute("saved-theme","dark");`,
+          }}
+        />
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
           <>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
