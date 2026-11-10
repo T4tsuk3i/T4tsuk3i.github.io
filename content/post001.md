@@ -4,6 +4,11 @@ date: 2026-03-17
 tags: [mathematics, art, patterns]
 ---
 
+<figure class="post-cover">
+  <img src="./static/images/post001.jpg" alt="A golden cardioid formed by fine lines connecting points on a circle">
+  <figcaption>The ×2 times table, drawing itself.</figcaption>
+</figure>
+
 _I was googling something completely unrelated. Then an image stopped me cold._
 
 A circle. Dozens of lines inside it. And somehow, impossibly, the shape those lines made together looked exactly like a heart.

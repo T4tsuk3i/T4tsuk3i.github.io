@@ -5,6 +5,11 @@ date: 2026-03-10
 
 *Turning fun stuff boring since forever — and loving every second of it.*
 
+<figure class="post-cover">
+  <img src="./static/images/about.jpg" alt="A long library aisle with warm hanging lights and shelves of books">
+  <figcaption>Books, light, and somewhere to get lost.</figcaption>
+</figure>
+
 ---
 
 Hey, I'm **Tatsuya** — also known as T4tsuk3i on the internet.

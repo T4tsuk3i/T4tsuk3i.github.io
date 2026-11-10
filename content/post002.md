@@ -4,6 +4,11 @@ date: 2026-11-10
 tags: [programming, python, rust, linux]
 ---
 
+<figure class="post-cover">
+  <img src="./static/images/post002.jpg" alt="A laptop screen filled with code in a dark room">
+  <figcaption>The script that started it.</figcaption>
+</figure>
+
 _I wrote a script to do something boring. It was supposed to take a second._
 
 It took long enough for me to get up, make coffee, come back, and assume it had crashed.
