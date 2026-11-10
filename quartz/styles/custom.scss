@@ -300,6 +300,8 @@ article h2::after {
   display: block;
   width: 100%;
   height: auto;
+  margin: 0 !important;
+  border-radius: 0 !important;
   aspect-ratio: 1200 / 420;
   object-fit: cover;
 }
