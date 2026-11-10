@@ -2,7 +2,7 @@
 
 My personal blog: notes on learning, mathematics, systems, reverse engineering, and whatever else I am curious about.
 
-**Live site:** https://t4tsuk3i.github.io/
+**Live site:** https://t4tsuk3i.github.io/blog/
 
 ## Stack
 
@@ -45,11 +45,11 @@ The output goes to `public/`.
 
 ## Deployment
 
-- Repository: `T4tsuk3i/T4tsuk3i.github.io`
+- Repository: `T4tsuk3i/blog`
 - Branch: `main`
 - Workflow: `.github/workflows/deploy.yml`
 - Pages source: **GitHub Actions**
-- URL: https://t4tsuk3i.github.io/
+- URL: https://t4tsuk3i.github.io/blog/
 
 Any push to `main` triggers a build and deploy. The workflow can also be run manually from the **Actions** tab.
 
