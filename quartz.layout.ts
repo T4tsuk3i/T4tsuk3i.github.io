@@ -11,6 +11,7 @@ export const sharedPageComponents: SharedLayout = {
         { Component: Component.SiteNav(), grow: true },
         { Component: Component.Search() },
         { Component: Component.ShareButton() },
+        { Component: Component.Darkmode() },
       ],
       gap: "1.2rem",
       wrap: "wrap",

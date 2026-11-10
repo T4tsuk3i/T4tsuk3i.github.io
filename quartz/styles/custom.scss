@@ -226,6 +226,10 @@ header > * {
   background: var(--panel);
 }
 
+header .darkmode {
+  display: none !important;
+}
+
 /* ---------- hero ---------- */
 
 .hero {
