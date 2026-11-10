@@ -14,9 +14,7 @@ date: 2026-03-10
 
 <div class="recent-list">
   <a class="recent-item" href="./post002">
-    <div class="recent-thumb">
-      <img src="./static/images/post002.jpg" alt="A laptop screen filled with code in a dark room">
-    </div>
+    <div class="recent-thumb"><img src="./static/images/post002.jpg" alt="A laptop screen filled with code in a dark room"></div>
     <div class="recent-body">
       <div class="recent-meta">Nov 10, 2026 · <span class="category">Computing</span></div>
       <h3>My Computer Wasn't Slow. My Code Was.</h3>
@@ -24,11 +22,8 @@ date: 2026-03-10
     </div>
     <span class="recent-arrow" aria-hidden="true">→</span>
   </a>
-
   <a class="recent-item" href="./post001">
-    <div class="recent-thumb">
-      <img src="./static/images/post001.jpg" alt="A glowing violet cardioid made of fine lines on a dark background">
-    </div>
+    <div class="recent-thumb"><img src="./static/images/post001.jpg" alt="A glowing violet cardioid made of fine lines on a dark background"></div>
     <div class="recent-body">
       <div class="recent-meta">Mar 17, 2026 · <span class="category">Mathematics</span></div>
       <h3>Your Times Tables Are Artists.</h3>
