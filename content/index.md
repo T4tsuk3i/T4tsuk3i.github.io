@@ -4,91 +4,119 @@ date: 2026-03-10
 ---
 
 <section class="hero">
-  <img class="hero-image" src="./static/images/hero.jpg" alt="A green highland valley at sunrise, with a road winding through it">
+  <img class="hero-image" src="./static/images/hero.jpg" alt="A dark desk with a laptop showing code and a glowing geometric artifact floating above it">
   <div class="hero-content">
-    <p class="hero-kicker">A notebook about learning</p>
-    <h1 class="hero-title">Learning is a story that never ends.</h1>
-    <p class="hero-subtitle">Code, systems, mathematics, and the things I cannot stop pulling apart. One idea at a time.</p>
+    <p class="hero-kicker">A public notebook</p>
+    <h1 class="hero-title">Learning, Building,<br>and Figuring Things Out.</h1>
+    <p class="hero-subtitle">
+      A public notebook of research, experiments, projects and unfinished ideas -
+      somewhere between technology, games, and the simple joy of understanding how things work.
+    </p>
     <div class="hero-actions">
-      <a class="hero-link" href="./post002">Read the latest post <span aria-hidden="true">→</span></a>
-      <a class="hero-link-secondary" href="./all-posts">Browse writing</a>
+      <a class="hero-link" href="./all-posts">Explore Notes →</a>
+      <a class="hero-link-secondary" href="./projects">View Projects</a>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="section-head">
-    <h2>Latest writing</h2>
-    <a href="./all-posts">All posts →</a>
-  </div>
-  <div class="post-grid">
-    <a class="post-card" href="./post002">
-      <div class="post-card-media">
-        <img src="./static/images/post002.jpg" alt="A laptop screen filled with code in a dark room">
-      </div>
-      <div class="post-card-body">
-        <span class="post-card-date">November 2026</span>
-        <h3>My Computer Wasn't Slow. My Code Was.</h3>
-        <p>A tiny Python script, a stopwatch, and the week I moved to Rust and Fedora.</p>
-        <div class="post-card-tags">
-          <span>programming</span>
-          <span>python</span>
-          <span>rust</span>
-          <span>linux</span>
-        </div>
-      </div>
-    </a>
-    <a class="post-card" href="./post001">
-      <div class="post-card-media">
-        <img src="./static/images/post001.jpg" alt="A golden cardioid made of fine lines on a dark background">
-      </div>
-      <div class="post-card-body">
-        <span class="post-card-date">March 2026</span>
-        <h3>Your Times Tables Are Artists.</h3>
-        <p>The ×2 times table draws a heart. The ×3 draws a kidney. Nobody told us.</p>
-        <div class="post-card-tags">
-          <span>mathematics</span>
-          <span>art</span>
-          <span>patterns</span>
-        </div>
-      </div>
-    </a>
-  </div>
-</section>
+<div class="home-columns">
+  <aside class="explore-rail">
+    <h2 class="rail-title">Explore</h2>
+    <nav class="rail-nav">
+      <a class="active" href="./">
+        <span class="rail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg></span>
+        Home
+      </a>
+      <a href="./all-posts">
+        <span class="rail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h6"/></svg></span>
+        Notes
+      </a>
+      <a href="./projects">
+        <span class="rail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 22 7 12 12 2 7Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span>
+        Projects
+      </a>
+      <a href="./research">
+        <span class="rail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/><path d="M8.5 14h7"/></svg></span>
+        Research
+      </a>
+      <a href="./topics">
+        <span class="rail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+        Topics
+      </a>
+      <a href="./archive">
+        <span class="rail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4" rx="1"/><path d="M5 8v12h14V8"/><path d="M10 12h4"/></svg></span>
+        Archive
+      </a>
+    </nav>
 
-<section class="home-intro">
-  <p class="section-label">Why this exists</p>
-  <p>
-    A person rediscovering his roots - from Mangalore, now navigating life in Bangalore.
-    Somewhere between deadlines and the pressure of becoming something, I lost the part of
-    me that learned just for the joy of it. This blog is my reset.
-  </p>
-  <p>
-    Not to teach, not to lecture - but to help people rediscover why we learn at all.
-    Because learning will always be a story that never ends. And the longer it goes,
-    the more interesting it gets.
-  </p>
-  <p>
-    A researcher, tinkerer, coder, gamer, artist - who believes that the joy of learning
-    never really leaves you. It just gets buried.
-  </p>
-  <p>
-    Every month, one thing. Simple or complex, scientific or philosophical, ancient or new.
-    Written so that anyone - young or old - can pick it up and feel that spark again.
-  </p>
-  <p>This is my new beginning. Welcome to the journey.</p>
-</section>
+    <div class="rail-divider"></div>
 
-<section class="about-strip">
-  <img src="./static/images/about.jpg" alt="A long library aisle with warm hanging lights and shelves of books">
-  <div class="about-copy">
-    <p class="section-label">About me</p>
-    <h2>A researcher, tinkerer, coder, gamer, artist.</h2>
-    <p>
-      I'm a cybersecurity researcher, an AI tinkerer, an artist, a gamer, an endurance
-      cyclist, and now apparently a blogger. I do everything that pulls at my curiosity -
-      and then I pull it apart to see how it works.
-    </p>
-    <a href="./about-me">More about me →</a>
-  </div>
-</section>
+    <h3 class="rail-subtitle">Topics</h3>
+    <div class="topic-pills">
+      <a href="./tags/programming">programming</a>
+      <a href="./tags/python">python</a>
+      <a href="./tags/rust">rust</a>
+      <a href="./tags/linux">linux</a>
+      <a href="./tags/mathematics">mathematics</a>
+      <a href="./tags/art">art</a>
+      <a href="./tags/patterns">patterns</a>
+    </div>
+  </aside>
+
+  <section class="recent-column">
+    <div class="rail-heading">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1Z"/></svg>
+      Recently Explored
+    </div>
+
+    <div class="recent-list">
+      <a class="recent-item" href="./post002">
+        <div class="recent-thumb">
+          <img src="./static/images/post002.jpg" alt="A laptop screen filled with code in a dark room">
+        </div>
+        <div class="recent-body">
+          <div class="recent-meta">Nov 10, 2026 · <span class="category">Computing</span></div>
+          <h3>My Computer Wasn't Slow. My Code Was.</h3>
+          <p>A small profiling session that changed how I think about performance - comparing Python and Rust, finding the real bottleneck, and what I learned on Fedora.</p>
+        </div>
+        <span class="recent-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="recent-item" href="./post001">
+        <div class="recent-thumb">
+          <img src="./static/images/post001.jpg" alt="A glowing violet cardioid made of fine lines on a dark background">
+        </div>
+        <div class="recent-body">
+          <div class="recent-meta">Mar 17, 2026 · <span class="category">Mathematics</span></div>
+          <h3>Your Times Tables Are Artists.</h3>
+          <p>Exploring why simple multiplication can create such beautiful patterns, and what it tells us about numbers, geometry and symmetry.</p>
+        </div>
+        <span class="recent-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+  <aside class="currently-rail">
+    <div class="rail-heading">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+      Currently
+    </div>
+    <ul class="currently-list">
+      <li class="done"><span class="check-box">✓</span> Local AI assistant</li>
+      <li><span class="check-box"></span> OSINT tools with memory</li>
+      <li><span class="check-box"></span> Generative art in Python</li>
+      <li class="done"><span class="check-box">✓</span> This blog</li>
+      <li><span class="check-box"></span> Reverse engineering rabbit holes</li>
+    </ul>
+
+    <div class="rail-divider"></div>
+
+    <div class="rail-heading">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h7"/></svg>
+      Random Thought
+    </div>
+    <blockquote class="random-thought">
+      “The joy of learning never really leaves you. It just gets buried.”
+    </blockquote>
+  </aside>
+</div>

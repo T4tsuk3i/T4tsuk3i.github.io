@@ -7,12 +7,12 @@ export const sharedPageComponents: SharedLayout = {
   header: [
     Component.Flex({
       components: [
-        { Component: Component.PageTitle(), grow: true },
-        { Component: Component.SiteNav() },
+        { Component: Component.Brand(), basis: "240px", shrink: false },
+        { Component: Component.SiteNav(), grow: true },
         { Component: Component.Search() },
-        { Component: Component.Darkmode() },
+        { Component: Component.ShareButton() },
       ],
-      gap: "1rem",
+      gap: "1.2rem",
       wrap: "wrap",
     }),
   ],

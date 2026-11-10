@@ -24,6 +24,8 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import SiteNav from "./SiteNav"
+import Brand from "./Brand"
+import ShareButton from "./ShareButton"
 
 export {
   ArticleTitle,
@@ -52,4 +54,6 @@ export {
   Flex,
   ConditionalRender,
   SiteNav,
+  Brand,
+  ShareButton,
 }

@@ -5,7 +5,7 @@ tags: [mathematics, art, patterns]
 ---
 
 <figure class="post-cover">
-  <img src="./static/images/post001.jpg" alt="A golden cardioid formed by fine lines connecting points on a circle">
+  <img src="./static/images/post001.jpg" alt="A glowing violet cardioid formed by fine lines connecting points on a circle">
   <figcaption>The ×2 times table, drawing itself.</figcaption>
 </figure>
 

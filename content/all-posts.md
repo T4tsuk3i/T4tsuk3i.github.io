@@ -12,37 +12,29 @@ date: 2026-03-10
   </div>
 </section>
 
-<div class="post-grid">
-  <a class="post-card" href="./post002">
-    <div class="post-card-media">
+<div class="recent-list">
+  <a class="recent-item" href="./post002">
+    <div class="recent-thumb">
       <img src="./static/images/post002.jpg" alt="A laptop screen filled with code in a dark room">
     </div>
-    <div class="post-card-body">
-      <span class="post-card-date">November 2026</span>
+    <div class="recent-body">
+      <div class="recent-meta">Nov 10, 2026 · <span class="category">Computing</span></div>
       <h3>My Computer Wasn't Slow. My Code Was.</h3>
-      <p>A tiny Python script, a stopwatch, and the week I moved to Rust and Fedora.</p>
-      <div class="post-card-tags">
-        <span>programming</span>
-        <span>python</span>
-        <span>rust</span>
-        <span>linux</span>
-      </div>
+      <p>A small profiling session that changed how I think about performance - comparing Python and Rust, finding the real bottleneck, and what I learned on Fedora.</p>
     </div>
+    <span class="recent-arrow" aria-hidden="true">→</span>
   </a>
-  <a class="post-card" href="./post001">
-    <div class="post-card-media">
-      <img src="./static/images/post001.jpg" alt="A golden cardioid made of fine lines on a dark background">
+
+  <a class="recent-item" href="./post001">
+    <div class="recent-thumb">
+      <img src="./static/images/post001.jpg" alt="A glowing violet cardioid made of fine lines on a dark background">
     </div>
-    <div class="post-card-body">
-      <span class="post-card-date">March 2026</span>
+    <div class="recent-body">
+      <div class="recent-meta">Mar 17, 2026 · <span class="category">Mathematics</span></div>
       <h3>Your Times Tables Are Artists.</h3>
-      <p>The ×2 times table draws a heart. The ×3 draws a kidney. Nobody told us.</p>
-      <div class="post-card-tags">
-        <span>mathematics</span>
-        <span>art</span>
-        <span>patterns</span>
-      </div>
+      <p>Exploring why simple multiplication can create such beautiful patterns, and what it tells us about numbers, geometry and symmetry.</p>
     </div>
+    <span class="recent-arrow" aria-hidden="true">→</span>
   </a>
 </div>
 

@@ -1,16 +1,29 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { FullSlug, joinSegments, pathToRoot, resolveRelative } from "../util/path"
+import { FullSlug, resolveRelative } from "../util/path"
+
+const LINKS: { label: string; target: string }[] = [
+  { label: "Home", target: "index" },
+  { label: "Notes", target: "all-posts" },
+  { label: "Projects", target: "projects" },
+  { label: "Research", target: "research" },
+  { label: "About", target: "about-me" },
+]
 
 const SiteNav: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const slug = fileData.slug!
   return (
     <nav class="site-nav" aria-label="Primary">
-      <a href={resolveRelative(slug, "all-posts" as FullSlug)}>Writing</a>
-      <a href={resolveRelative(slug, "about-me" as FullSlug)}>About</a>
-      <a href={joinSegments(pathToRoot(slug), "index.xml")}>RSS</a>
-      <a href="https://github.com/T4tsuk3i" target="_blank" rel="noopener noreferrer">
-        GitHub
-      </a>
+      {LINKS.map((link) => {
+        const active = slug === link.target
+        return (
+          <a
+            href={resolveRelative(slug, link.target as FullSlug)}
+            class={active ? "active" : undefined}
+          >
+            {link.label}
+          </a>
+        )
+      })}
     </nav>
   )
 }
