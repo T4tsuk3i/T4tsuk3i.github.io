@@ -11,6 +11,12 @@ One post a month. One idea at a time.
 
 ## 2026
 
+### November
+
+**[[post002|My Computer Wasn't Slow. My Code Was.]]**
+A tiny Python script, a stopwatch, and the week I moved to Rust and Fedora.
+`programming · python · rust · linux`
+
 ### March
 
 **[[post001|Your Times Tables Are Artists.]]**
