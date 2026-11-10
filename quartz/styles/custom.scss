@@ -162,3 +162,370 @@ footer {
   margin-top: 2rem !important;
 }
 
+/* =============================================
+   Ember & Ink - 2026 refresh
+   ============================================= */
+
+:root {
+  --hero-ink: #0d0b0a;
+  --hero-cream: #f6ebda;
+  --hero-copper: #e39a6a;
+  --hero-ember: #f4c08a;
+  --hero-cool: #6f9a94;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(201, 120, 69, 0.10), transparent 60%),
+    radial-gradient(900px 500px at 100% 110%, rgba(111, 154, 148, 0.06), transparent 55%),
+    var(--light) !important;
+  background-attachment: fixed !important;
+}
+
+[saved-theme="dark"] body {
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(227, 154, 106, 0.10), transparent 60%),
+    radial-gradient(900px 500px at 100% 110%, rgba(111, 154, 148, 0.07), transparent 55%),
+    var(--light) !important;
+}
+
+::selection {
+  background: var(--tertiary);
+  color: var(--light);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lightgray);
+  border-radius: 999px;
+  border: 2px solid var(--light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* Page title gets a small ember underline */
+.page-title {
+  border-bottom: none !important;
+  font-size: 1.3rem !important;
+  letter-spacing: -0.01em !important;
+}
+
+.page-title::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin-top: 0.75rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--secondary), var(--tertiary), transparent);
+}
+
+/* Search stays usable in dark mode */
+.search > .search-button {
+  background: var(--light) !important;
+  color: var(--darkgray) !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.search > .search-button:hover {
+  border-color: var(--secondary) !important;
+  box-shadow: 0 4px 16px -8px var(--secondary) !important;
+}
+
+/* Article title: quieter rule, more presence */
+.article-title {
+  font-size: clamp(2rem, 4.6vw, 3rem) !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  letter-spacing: -0.015em !important;
+}
+
+.article-title::after {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 2px;
+  margin-top: 1rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--secondary), var(--tertiary), transparent);
+}
+
+/* Homepage hero replaces the redundant page title */
+body[data-slug="index"] .article-title,
+body[data-slug="index"] .content-meta {
+  display: none !important;
+}
+
+article h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: none !important;
+}
+
+article h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--lightgray), transparent);
+}
+
+/* ---- HERO ---- */
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin: 0.25rem 0 2.5rem;
+  border-radius: 22px;
+  border: 1px solid rgba(227, 154, 106, 0.22);
+  background: var(--hero-ink);
+  box-shadow:
+    0 30px 80px -40px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 420;
+  object-fit: cover;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(13, 11, 10, 0.97) 0%,
+    rgba(13, 11, 10, 0.86) 32%,
+    rgba(13, 11, 10, 0.20) 68%,
+    rgba(13, 11, 10, 0) 100%
+  );
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 48%;
+  padding: 2.4rem 2.8rem;
+  color: var(--hero-cream);
+}
+
+.hero-kicker {
+  margin: 0 0 0.75rem !important;
+  color: var(--hero-copper) !important;
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+}
+
+.hero-title {
+  margin: 0 0 0.9rem !important;
+  color: var(--hero-cream) !important;
+  font-family: "Lora", Georgia, serif !important;
+  font-size: clamp(2rem, 4.2vw, 3.2rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.02em !important;
+  text-wrap: balance;
+}
+
+.hero-subtitle {
+  max-width: 25rem;
+  margin: 0 0 1.3rem !important;
+  color: rgba(246, 235, 218, 0.72) !important;
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  padding: 0.62rem 1.15rem;
+  border-radius: 999px;
+  background: var(--hero-copper);
+  color: #1a120d !important;
+  font-size: 0.84rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero-link:hover {
+  background: var(--hero-ember);
+  color: #1a120d !important;
+  text-decoration: none !important;
+  transform: translateY(-1px);
+}
+
+/* Magazine-style opening on the homepage */
+.hero + p::first-letter {
+  float: left;
+  margin: 0.12rem 0.55rem 0 0;
+  color: var(--secondary);
+  font-family: "Lora", Georgia, serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 0.78;
+}
+
+/* ---- HOMEPAGE CARDS ---- */
+.link-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 1.2rem 0 2.2rem;
+}
+
+.link-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-height: 150px;
+  padding: 1.15rem 1.2rem 1.5rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--light) 84%, var(--lightgray) 16%);
+  box-shadow: 0 16px 40px -34px rgba(0, 0, 0, 0.7);
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--secondary);
+  box-shadow: 0 22px 48px -30px color-mix(in srgb, var(--secondary) 55%, transparent);
+  text-decoration: none !important;
+}
+
+.link-card-kicker {
+  color: var(--gray);
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.link-card strong {
+  max-width: 90%;
+  color: var(--dark);
+  font-family: "Lora", Georgia, serif;
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.link-card-desc {
+  max-width: 92%;
+  color: var(--darkgray);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.link-card-arrow {
+  position: absolute;
+  right: 1.1rem;
+  bottom: 1rem;
+  color: var(--secondary);
+  font-size: 1.05rem;
+  transition: transform 0.2s ease;
+}
+
+.link-card:hover .link-card-arrow {
+  transform: translateX(3px);
+}
+
+.link-card--latest {
+  border-color: color-mix(in srgb, var(--secondary) 45%, var(--lightgray));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--secondary) 16%, transparent), transparent 62%),
+    color-mix(in srgb, var(--light) 88%, var(--lightgray) 12%);
+}
+
+/* Explorer hover */
+.explorer .folder-container div:hover,
+.explorer .file-tree > li > a:hover {
+  color: var(--secondary) !important;
+}
+
+/* Footer links */
+footer a {
+  color: var(--gray) !important;
+}
+
+footer a:hover {
+  color: var(--secondary) !important;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    margin-top: 0.5rem;
+    border-radius: 16px;
+  }
+
+  .hero-image {
+    aspect-ratio: 1200 / 620;
+    object-position: 72% center;
+  }
+
+  .hero::after {
+    background: linear-gradient(
+      0deg,
+      rgba(13, 11, 10, 0.98) 0%,
+      rgba(13, 11, 10, 0.72) 52%,
+      rgba(13, 11, 10, 0.12) 100%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    inset: auto;
+    max-width: 100%;
+    margin-top: -2.5rem;
+    padding: 1.2rem 1.4rem 1.6rem;
+  }
+
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem !important;
+  }
+
+  .link-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .link-card {
+    min-height: 0;
+    padding-bottom: 1.35rem;
+  }
+
+  .hero + p::first-letter {
+    font-size: 3rem;
+  }
+}
+
