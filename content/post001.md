@@ -2,6 +2,8 @@
 title: Your Times Tables Are Artists.
 date: 2026-03-17
 tags: [mathematics, art, patterns]
+category: Mathematics
+description: Why drawing multiplication tables around a circle produces cardioids, and what those curves say about symmetry and modular arithmetic.
 ---
 
 <figure class="post-cover">

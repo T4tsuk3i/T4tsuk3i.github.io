@@ -1,5 +1,12 @@
-document.documentElement.setAttribute("saved-theme", "dark")
-localStorage.setItem("theme", "dark")
+const params = new URLSearchParams(window.location.search)
+const forced = params.get("theme")
+if (forced === "light" || forced === "dark") {
+  document.documentElement.setAttribute("saved-theme", forced)
+  localStorage.setItem("theme", forced)
+} else {
+  const currentTheme = localStorage.getItem("theme") ?? "dark"
+  document.documentElement.setAttribute("saved-theme", currentTheme)
+}
 
 const emitThemeChangeEvent = (theme: "light" | "dark") => {
   const event: CustomEventMap["themechange"] = new CustomEvent("themechange", {

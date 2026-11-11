@@ -40,19 +40,35 @@ export default (() => {
       <head>
         <title>{title}</title>
         <meta charSet="utf-8" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `localStorage.setItem("theme","dark");document.documentElement.setAttribute("saved-theme","dark");`,
-          }}
-        />
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
           <>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
+    
+        <script
+          id="search-close-guard"
+          dangerouslySetInnerHTML={{
+            __html: `(function(){
+  function close(){document.querySelectorAll('.search > .search-container.active').forEach(function(c){c.classList.remove('active')})}
+  document.addEventListener('click', function(e){
+    var t=e.target;
+    if(!t||!t.closest)return;
+    if(t.closest('.search-button'))return;
+    if(t.closest('.search-space'))return;
+    close();
+  }, true);
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();`,
+          }}
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link rel="stylesheet" href={googleFontHref(cfg.theme)} />
             {cfg.theme.typography.title && (
               <link rel="stylesheet" href={googleFontSubsetHref(cfg.theme, cfg.pageTitle)} />
             )}
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Serif+Devanagari:wght@500;600&display=swap"
+            />
           </>
         )}
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />

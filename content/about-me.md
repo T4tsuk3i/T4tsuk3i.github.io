@@ -3,12 +3,28 @@ title: About Me
 date: 2026-03-10
 ---
 
-*Turning fun stuff boring since forever — and loving every second of it.*
+<div class="et-page-head">
+  <p class="et-page-kicker">Who writes this</p>
+  <h1 class="et-page-title">About</h1>
+  <p class="et-page-sub">Cybersecurity researcher, AI tinkerer, artist, gamer, endurance cyclist — and the person behind this ledger.</p>
+</div>
 
-<figure class="post-cover">
-  <img src="./static/images/about.jpg" alt="A long library aisle with warm hanging lights and shelves of books">
-  <figcaption>Books, light, and somewhere to get lost.</figcaption>
-</figure>
+<section class="et-profile">
+  <figure class="et-profile-photo">
+    <img src="./static/images/about.jpg" alt="A long library aisle with warm hanging lights and shelves of books">
+  </figure>
+  <div class="et-profile-body">
+    <h2 class="et-profile-name">T4tsuk3i</h2>
+    <p class="et-profile-role">Scribe · Tinkerer · Bangalore, India</p>
+    <p class="et-profile-intro"><em>Turning fun stuff boring since forever — and loving every second of it.</em></p>
+    <dl class="et-profile-stats">
+      <div><dt>From</dt><dd>Mangalore → Bangalore</dd></div>
+      <div><dt>Work</dt><dd>Cybersecurity &amp; OSINT</dd></div>
+      <div><dt>Builds</dt><dd>Local AI, Rust, Tauri</dd></div>
+      <div><dt>Daily driver</dt><dd>Arch · Fedora</dd></div>
+    </dl>
+  </div>
+</section>
 
 ---
 

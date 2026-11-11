@@ -1,28 +1,16 @@
 ---
-title: Research
+title: Ongoing
 date: 2026-11-10
 ---
 
-<p class="section-label">What I'm digging into</p>
+<div class="et-page-head">
+  <p class="et-page-kicker">Work in progress</p>
+  <h1 class="et-page-title">Ongoing</h1>
+  <p class="et-page-sub">Long-form experiments that are not finished enough to publish. Nothing here yet.</p>
+</div>
 
-I like understanding how things work, then taking them apart to see what is underneath. Most of my research sits somewhere between security, systems, and the strange places where they meet.
-
-## Reverse engineering and game preservation
-
-Taking apart software, studying how it works, and figuring out the pieces that make it tick. Project Sunrise is where a lot of that curiosity ends up.
-
-## OSINT and automation
-
-Building tools that remember what they find, connect the dots across time, and remove the boring parts of an investigation.
-
-## AI and local models
-
-Experimenting with local LLMs, assistants, memory, and the engineering around them. I care more about systems that are understandable than systems that are impressive in a demo.
-
-## Security and teaching
-
-I built the [Ishtar Anomaly CTF](https://github.com/T4tsuk3i/ishtar-ctf-archive) for my students: a hands-on archive of forensics, reverse engineering, steganography, and multi-step puzzles. The write-up and challenge files are public.
-
----
-
-If you want to collaborate on reverse engineering, game preservation, CTFs, or weird AI experiments, my door is open.
+<div class="et-empty">
+  <p class="et-empty-mark">◌</p>
+  <h2>Nothing published yet</h2>
+  <p>This is where in-progress research will live. Check back once a few experiments are ready, or read the <a href="./all-posts">chronicle</a> in the meantime.</p>
+</div>
