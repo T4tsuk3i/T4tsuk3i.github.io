@@ -18,15 +18,15 @@ const ChronicleBody = Component.ConditionalRender({
 //   condition: (props) => props.fileData.slug === "index",
 // })
 
-const HomeGraph = Component.ConditionalRender({
-  component: Component.KnowledgeGraph(),
+const HomeNow = Component.ConditionalRender({
+  component: Component.NowPanel(),
   condition: (props) => props.fileData.slug === "index",
 })
 
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [Component.Brand(), Component.Search(), Component.Darkmode()],
-  afterBody: [HomeBody, ChronicleBody, HomeGraph],
+  afterBody: [HomeBody, ChronicleBody, HomeNow],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/T4tsuk3i",

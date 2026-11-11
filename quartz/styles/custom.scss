@@ -3202,3 +3202,118 @@ body[data-slug="index"] .page-footer .graph .graph-container { width: 100% !impo
 .et-kg-svg:has(.kg-node:hover) .kg-edge {
   opacity: 0.3;
 }
+
+
+/* ---------- "Now" panel (replaces the graph) ---------- */
+
+.et-now {
+  margin: 2.2rem 0 0;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.et-now-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1.1rem 0.7rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.et-now-head h2 {
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  color: var(--bright) !important;
+  font-family: var(--mono) !important;
+  font-size: 0.6rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+}
+
+.et-now-head span {
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.et-now-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+  padding: 1.2rem 1.1rem 1.35rem;
+}
+
+.et-now-col h3 {
+  margin: 0 0 0.55rem !important;
+  color: var(--accent) !important;
+  font-family: var(--mono) !important;
+  font-size: 0.58rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+
+.et-now-col ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.et-now-col li {
+  position: relative;
+  padding-left: 0.85rem;
+  margin: 0 0 0.4rem;
+  color: var(--text);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.et-now-col li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: var(--accent-2);
+}
+
+.et-now-col p {
+  margin: 0 !important;
+  color: var(--dim) !important;
+  font-size: 0.82rem !important;
+  line-height: 1.55 !important;
+}
+
+.et-now-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.et-now-links a {
+  color: var(--text) !important;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+}
+
+.et-now-links a:hover {
+  color: var(--accent) !important;
+}
+
+.et-now-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+@media (max-width: 900px) {
+  .et-now-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.2rem;
+  }
+}

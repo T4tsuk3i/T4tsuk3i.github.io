@@ -32,7 +32,7 @@ import GuildSidebar from "./GuildSidebar"
 import HomeDashboard from "./HomeDashboard"
 import PostCards from "./PostCards"
 import WorldAtlas from "./WorldAtlas"
-import KnowledgeGraph from "./KnowledgeGraph"
+import NowPanel from "./NowPanel"
 
 export {
   ArticleTitle,
@@ -69,5 +69,5 @@ export {
   HomeDashboard,
   PostCards,
   WorldAtlas,
-  KnowledgeGraph,
+  NowPanel,
 }
