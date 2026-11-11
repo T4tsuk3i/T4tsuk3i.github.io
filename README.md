@@ -1,69 +1,46 @@
-# Tattva — Kensho — Journey
+# ತತ್ವ – 見性 – 여정 — Field Ledger
 
-My personal blog: notes on learning, mathematics, systems, reverse engineering, and whatever else I am curious about.
+A personal notebook built with [Quartz 4](https://quartz.jzhao.xyz). Cream-and-lavender
+paper theme, tag-driven chronicle, and a single-entry homepage dashboard.
 
-**Live site:** https://t4tsuk3i.github.io/blog/
-
-## Stack
-
-- [Quartz v4](https://quartz.jzhao.xyz/) — static site generator for Markdown notes
-- TypeScript, Preact, and a small amount of Svelte-free client code
-- GitHub Actions builds the site on every push to `main` and deploys it to GitHub Pages
-
-## Writing a post
-
-Posts live in `content/` as Markdown. A post starts with frontmatter:
-
-```yaml
----
-title: Your title
-date: 2026-03-17
-tags: [mathematics, art, patterns]
----
-```
-
-Then write the post, add it to `content/all-posts.md` so it appears in the index, and push to `main`.
-
-## Local development
-
-Requires Node.js 22 or newer.
-
-```sh
-npm install
-npx quartz build --serve
-```
-
-The local site is served at `http://localhost:8080`.
-
-To build without the dev server:
-
-```sh
-npx quartz build
-```
-
-The output goes to `public/`.
-
-## Deployment
-
-- Repository: `T4tsuk3i/blog`
-- Branch: `main`
-- Workflow: `.github/workflows/deploy.yml`
-- Pages source: **GitHub Actions**
-- URL: https://t4tsuk3i.github.io/blog/
-
-Any push to `main` triggers a build and deploy. The workflow can also be run manually from the **Actions** tab.
+Live: **https://t4tsuk3i.github.io/blog/**
 
 ## Structure
 
-```text
-content/            # Markdown posts and pages
-quartz/             # Quartz source and components
-quartz.config.ts    # Site title, URL, theme, plugins
-quartz.layout.ts    # Layout configuration
-.github/workflows/  # Deployment workflow
-public/             # Build output (ignored by git)
+| Path | Purpose |
+|---|---|
+| `content/` | All pages and posts (Markdown). This is the only folder you normally edit. |
+| `quartz/` | Quartz source: components, plugins, styles, scripts. |
+| `quartz/styles/custom.scss` | The whole visual theme (tokens, layout, typography, components). |
+| `quartz.config.ts` | Site title, base URL, palette, fonts, plugins. |
+| `quartz.layout.ts` | Header, sidebars, homepage components. |
+| `.github/workflows/deploy.yml` | Builds and publishes to GitHub Pages on every push to `main`. |
+| `CREDITS.md` | Licences for the free/open-source resources used. |
+
+## Local development
+
+```bash
+npm ci
+npx quartz build --serve     # http://localhost:8080
 ```
 
-## License
+Requires Node 22 (see `.node-version`).
 
-Quartz itself is MIT licensed. The writing in `content/` is © T4tsuk3i unless stated otherwise.
+## Writing
+
+- Add a post to `content/` with frontmatter: `title`, `date`, `tags`, optional `category`,
+  `description`, `cover`.
+- Tags become topic pages automatically (`/tags/<tag>`).
+- The homepage counts, the chronicle list and the "Now" panel are generated from the
+  content — no numbers are hardcoded.
+
+## Deploying
+
+Push to `main`. GitHub Actions builds the site and publishes it to GitHub Pages.
+No other workflow is needed.
+
+## Licence
+
+- Site content © T4tsuk3i.
+- Quartz is MIT — see `LICENSE.txt`.
+- Fonts, icons and other resources are listed in `CREDITS.md`.
