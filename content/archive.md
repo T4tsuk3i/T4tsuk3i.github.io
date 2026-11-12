@@ -11,6 +11,15 @@ date: 2026-11-10
 
 <div class="et-row-list">
   <article class="et-row is-text">
+    <span class="et-row-date">2026 · Nov 12</span>
+    <div>
+      <h2 class="et-row-title"><a href="./post002">My Journey From Windows to Linux</a></h2>
+      <p class="et-row-text">From a beige Windows 98 box to Fedora, Distrobox and a local AI assistant on 8 GB of VRAM.</p>
+    </div>
+    <span class="et-row-cat">Linux</span>
+  </article>
+
+  <article class="et-row is-text">
     <span class="et-row-date">2026 · Mar 17</span>
     <div>
       <h2 class="et-row-title"><a href="./post001">Your Times Tables Are Artists.</a></h2>
